@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*,*::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin: 0 auto;
+/* max-width: 960px; */
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+a {
+  background-color: hsl(0, 0%, 95%);
+  border: solid  hsl(0, 0%, 95%);
+  margin-top: 1.5rem;
+  border-radius: 1.3rem;
+  height:2.3rem;
+  width: 8rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: 2rem 1rem;
+}
+.sedans-column {
+  padding: 2.5rem;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.sedans-column a {
+  color: hsl(31, 77%, 52%);
+}
+.SUVS-column {
+  padding: 2.5rem;
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+.SUVS-column a {
+  color: hsl(184, 100%, 22%);
+}
+.Luxury-column {
+  padding: 2.5rem;
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+.Luxury-column a {
+  color: hsl(179, 100%, 13%);
+}
+
+.sedans-column a:hover, .SUVS-column a:hover, .Luxury-column a:hover {
+  background-color: hsla(0, 0%, 95%, 0);
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 425px) {
+  .container {
+    margin: 2rem
+  }
+}
+@media screen and (min-width: 760px) {
+  main {
+    max-width: 60rem;
+  }
+
+  a {
+    margin-top: 4rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+  }
+
+}
